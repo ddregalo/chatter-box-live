@@ -2,7 +2,7 @@
   "name": "chatapp",
   "version": "1.0.0",
   "description": "Basic Chat App w/ testing",
-  "main": "server.js",
+  "main": "src/server.js",
   "scripts": {
     "test": "jasmine"
   },
