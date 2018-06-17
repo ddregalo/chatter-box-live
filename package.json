@@ -1,0 +1,14 @@
+{
+  "name": "chatapp",
+  "version": "1.0.0",
+  "description": "Basic Chat App w/ testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "author": "daniel.campos",
+  "license": "ISC",
+  "dependencies": {
+    "npm": "^6.1.0"
+  }
+}
