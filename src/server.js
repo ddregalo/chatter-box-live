@@ -1,6 +1,8 @@
 var express = require('express')
 var bodyParser = require('body-parser')
 var app = express()
+var http = require('http').Server(app)
+var io = require('socket.io')(http)
 const PORT = 3000;
 
 app.use(express.static(__dirname + "/views/"))
@@ -22,6 +24,6 @@ app.post("/allMessages", (req, res) => {
   res.sendStatus(200)
 })
 
-app.listen(PORT, () => {
+http.listen(PORT, () => {
   console.log(`Server is listening on port ${PORT}...`)
 })
