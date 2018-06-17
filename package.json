@@ -9,6 +9,7 @@
   "author": "daniel.campos",
   "license": "ISC",
   "dependencies": {
+    "jasmine": "^3.1.0",
     "npm": "^6.1.0"
   }
 }
