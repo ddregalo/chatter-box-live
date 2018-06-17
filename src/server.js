@@ -19,8 +19,8 @@ app.get("/allMessages", (req, res) => {
 })
 
 app.post("/allMessages", (req, res) => {
-  console.log(req.body)
   messages.push(req.body)
+  io.emit('message', req.body)
   res.sendStatus(200)
 })
 
